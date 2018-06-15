@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta http-equiv="content/type" charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    </head>
+    <body>
+            <h1>Prepare Page.</h1>
+            <form action="{{ url_for('prepare') }}" method='post'>
+                <input type="submit" value="载入用户..."/>
+            </form>
+            <div class="ttaa"></div>
+
+            <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+            <script language="javascript">
+                $(document).ready(function(){
+                    $("#load").click(function(){
+                        console.log('test');
+                    })
+                })
+            </script>
+    </body>
+</html>
